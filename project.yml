@@ -1,0 +1,37 @@
+name: Lister
+options:
+  bundleIdPrefix: com.lister
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  Lister:
+    type: application
+    platform: macOS
+    sources: [Lister]
+    info:
+      path: Lister/Info.plist
+      properties:
+        CFBundleName: Lister
+        CFBundleDisplayName: Lister
+        LSMinimumSystemVersion: "14.0"
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        NSLocalNetworkUsageDescription: Lister talks to the phone camera on your network.
+        NSMicrophoneUsageDescription: Lister listens for the word capture so you can take photos hands-free.
+        NSSpeechRecognitionUsageDescription: Lister recognises the word capture to take a photo.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lister.app
+        MARKETING_VERSION: "0.2.0"
+        CURRENT_PROJECT_VERSION: "20"
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: NO
+        ENABLE_APP_SANDBOX: NO
+schemes:
+  Lister:
+    build:
+      targets:
+        Lister: all
