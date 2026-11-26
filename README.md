@@ -26,3 +26,6 @@ open build/Build/Products/Release/Lister.app
 
 ## License
 MIT
+
+## Hardware
+The 3D model of the microscope is in [`hardware/microscope_assembled_v15.stl`](hardware/microscope_assembled_v15.stl). GitHub shows it in a 3D viewer.
